@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: black;
     width: 100vw;
     height: 100vh;
@@ -13,16 +13,39 @@ body{
     justify-content: center;
 }
 
-.container{
+.container {
     width: 50%;
     height: auto;
     background-color: rgba(174, 152, 219, 0.267);
     padding: 1.5rem;
     border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.container .btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container button {
+    font-size: 16px;
+    padding: 1em 3.3em;
+    cursor: pointer;
+    transform: perspective(200px) rotateX(15deg);
+    color: white;
+    font-weight: 900;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(0deg,
+            rgb(143, 65, 169) 0%,
+            rgb(235, 250, 19) 100%);
+    box-shadow: rgba(251, 63, 138, 0.2) 0px 40px 29px 0px;
+    will-change: transform;
+    transition: all 0.3s;
+    border-bottom: 2px solid rgb(228, 89, 61);
+}
+
+button:hover {
+    transform: perspective(180px) rotateX(30deg) translateY(2px);
+}
+
+button:active {
+    transform: perspective(170px) rotateX(36deg) translateY(5px);
 }
