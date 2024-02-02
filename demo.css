@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 50%;
+    height: auto;
+    background-color: rgba(174, 152, 219, 0.267);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.container .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
